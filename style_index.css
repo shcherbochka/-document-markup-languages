@@ -1,0 +1,149 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px 0;
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: gray;
+    
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-family: 'Monoton', cursive;
+    font-size: 40px;
+    font-weight: 700;
+    color:#000;
+}
+
+/*Nav*/
+.nav{
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+
+    color: #000;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.nav__link:hover{
+    color: #008000;
+}
+
+
+.hero{
+    min-height: 100vh;/*мин высота - один экран*/
+    display: flex; /*все элементы по центру*/
+    justify-content: center;
+
+    align-items: center;/*выравниываем по вертикальному центру*/
+}
+
+.container{
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto; /*внешние отступы св сн*/
+    padding: 0 15px;/*внутренние отступы*/
+}
+
+.hero__container{
+    display: grid; /*разбивааем на ячейки сетки*/
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));/*размещаем на макс ширину, min и max ширина*/
+    grid-gap: 20px;/*отсупы между ячейками (чтоб сильно не прилегали)*/
+}
+
+.hero__about{
+    display: flex; 
+    flex-direction: column; /*размещение по-вертикали*/
+    justify-content: center;
+}
+
+.hero_title{
+    margin-bottom: 20px;
+
+    font-size: 48px;/*размер шрифта*/
+    line-height: 1.1;
+}
+
+.hero__subtitle{
+    font-size: 42px;
+    font-weight: 400;
+    color: #008000;
+}
+
+.hero__links{
+    display: flex;
+}
+
+.hero__link{
+    margin-right: 10px;
+
+    font-size: 30px;
+    color: black;
+
+    transition: color 0.3s;/*плавность*/
+}
+
+.hero__link:hover{
+    color: 	#008000;
+}
+
+.hero__box{
+    max-width: 500px;
+    justify-self: center;
+    overflow: hidden;/*всё что выходит за пределы блока - скрываем*/
+
+    border: 10px solid whitesmoke;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+
+    border-radius: 30px;
+}
+
+.footer{
+    display: flex; 
+    justify-content: center;
+    font-size: 8px;
+    color: grey;
+}
