@@ -35,6 +35,7 @@ img{
     font-size: 24px;
     font-weight: 300;
     color: gray;
+    
 }
 
 .header__inner{
@@ -48,12 +49,14 @@ img{
     font-size: 40px;
     font-weight: 700;
     color:#000;
+    text-decoration: none;
 }
 
 /*Nav*/
 .nav{
     font-size: 17px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .nav__link{
@@ -71,9 +74,15 @@ img{
     color: #008000;
 }
 
+.title{
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto; /*внешние отступы св сн*/
+    padding: 0 15px;
+}
 
 .hero{
-    min-height: 100vh;/*мин высота - один экран*/
+    min-height: 60vh;/*мин высота - один экран*/    
     display: flex; /*все элементы по центру*/
     justify-content: center;
 
@@ -94,21 +103,57 @@ img{
 }
 
 .hero__about{
+    
     display: flex; 
     flex-direction: column; /*размещение по-вертикали*/
     justify-content: center;
 }
 
 .hero_title{
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    
 
     font-size: 30px;/*размер шрифта*/
     line-height: 1.1;
 }
 
-
-
 .hero__box{
+    max-width: 500px;
+    justify-self: center;
+    overflow: hidden;/*всё что выходит за пределы блока - скрываем*/
+
+    border: 10px solid whitesmoke;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+
+    border-radius: 30px;
+}
+/*************************************/
+.galery{
+   
+    display: flex; /*все элементы по центру*/
+    justify-content: center;
+
+    align-items: center;/*выравниываем по вертикальному центру*/
+}
+
+.container{
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto; /*внешние отступы св сн*/
+    padding: 0 15px;/*внутренние отступы*/
+}
+.title {
+    margin-bottom: 20px;
+}
+.galery__container{
+    display: grid; /*разбивааем на ячейки сетки*/
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));/*размещаем на макс ширину, min и max ширина*/
+    grid-gap: 20px;/*отсупы между ячейками (чтоб сильно не прилегали)*/
+}
+.galery_first_box, .galery_second_box, .galery_third_box{
+
     max-width: 400px;
     justify-self: center;
     overflow: hidden;/*всё что выходит за пределы блока - скрываем*/
@@ -118,36 +163,15 @@ img{
 
     border-radius: 30px;
 }
-
-.hero{
-    min-height: 100vh;/*мин высота - один экран*/
-    display: flex; /*все элементы по центру*/
-    justify-content: center;
-
-    align-items: center;/*выравниываем по вертикальному центру*/
+.galery_first, .galery_second, .galery_third{
+        width: 32%;
+        float: left;
+        margin-left: 10px;
 }
 
-.container{
-    max-width: 1230px;
-    width: 100%;
-    margin: 0 auto; /*внешние отступы св сн*/
-    padding: 0 15px;/*внутренние отступы*/
-}
-
-.hero__container{
-    display: grid; /*разбивааем на ячейки сетки*/
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));/*размещаем на макс ширину, min и max ширина*/
-    grid-gap: 20px;/*отсупы между ячейками (чтоб сильно не прилегали)*/
-}
-
-.hero__about{
-    display: flex; 
-    flex-direction: column; /*размещение по-вертикали*/
-    justify-content: center;
-}
-
-.hero_title{
+.galery_first_title, .galery_second_title, .galery_third_title{
     margin-bottom: 30px;
+    margin-top: 20px;
 
     font-size: 30px;/*размер шрифта*/
     line-height: 1.1;

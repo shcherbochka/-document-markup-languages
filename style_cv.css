@@ -1,0 +1,137 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: gray;
+    
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-family: 'Monoton', cursive;
+    font-size: 40px;
+    font-weight: 700;
+    color:#000;
+    text-decoration: none;
+}
+
+/*Nav*/
+.nav{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+
+    color: #000;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.nav__link:hover{
+    color: #008000;
+}
+
+
+.nav_anchor{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.title{
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto; /*внешние отступы св сн*/
+    padding: 0 15px;
+}
+
+.hero{
+    
+    display: flex; /*все элементы по центру*/
+    justify-content: center;
+
+    align-items: center;/*выравниываем по вертикальному центру*/
+}
+
+.container{
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto; /*внешние отступы св сн*/
+    padding: 0 15px;/*внутренние отступы*/
+}
+
+.hero__container{
+    display: grid; /*разбивааем на ячейки сетки*/
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));/*размещаем на макс ширину, min и max ширина*/
+    grid-gap: 20px;/*отсупы между ячейками (чтоб сильно не прилегали)*/
+}
+
+.hero__about{
+    
+    display: flex; 
+    flex-direction: column; /*размещение по-вертикали*/
+    justify-content: center;
+}
+
+.hero_title{
+    
+
+    font-size: 30px;/*размер шрифта*/
+    line-height: 1.1;
+}
+
+.hero__box{
+    
+    max-width: 350px;
+    justify-self: center;
+    overflow: hidden;/*всё что выходит за пределы блока - скрываем*/
+
+    border: 10px solid whitesmoke;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+
+    border-radius: 30px;
+}
+

@@ -49,12 +49,16 @@ img{
     font-size: 40px;
     font-weight: 700;
     color:#000;
+    text-decoration: none;
 }
+
+
 
 /*Nav*/
 .nav{
     font-size: 17px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .nav__link{
@@ -74,7 +78,7 @@ img{
 
 
 .hero{
-    min-height: 100vh;/*мин высота - один экран*/
+    min-height: 80vh;/*мин высота - один экран*/
     display: flex; /*все элементы по центру*/
     justify-content: center;
 
